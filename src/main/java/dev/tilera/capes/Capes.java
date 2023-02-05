@@ -13,7 +13,7 @@ public class Capes {
             capesInitialized = true;
             try {
                 DevCapes.getInstance().registerConfig(
-                    "https://git.tilera.org/tilera/capes/raw/branch/master/devcapes.json"
+                    "https://capes.tilera.xyz/devcapes.json"
                 );
                 MinecraftForge.EVENT_BUS.register(new RenderEventHandler());
             } catch (Exception e) {
