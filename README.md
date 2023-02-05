@@ -10,4 +10,4 @@ This is a port of the 1.5.2 version of the universal electricity mod library for
 - [MFFS](https://git.tilera.org/Anvilcraft/mffs)
 - [ICBM](https://git.tilera.org/Anvilcraft/icbm)
 - [Electric Expansion](https://git.tilera.org/Anvilcraft/electric-expansion)
-- [Mekanism (tilera's fork)](https://git.tilera.org/tilera/Mekanism-1.7.10-Community-Edition)
+- [Mekanism tilera Edition](https://git.tilera.org/tilera/Mekanism-tilera-Edition)
