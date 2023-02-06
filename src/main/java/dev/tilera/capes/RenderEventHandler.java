@@ -6,6 +6,7 @@ import com.jadarstudios.developercapes.user.UserManager;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraftforge.client.event.RenderPlayerEvent;
+import com.mojang.authlib.minecraft.MinecraftProfileTexture;
 
 public class RenderEventHandler {
     @SubscribeEvent
@@ -14,12 +15,16 @@ public class RenderEventHandler {
 
         UserManager manager = UserManager.getInstance();
         User user = manager.getUser(player.getUniqueID().toString());
-        if (user == null)
+        if (user == null) {
+            player.func_152121_a(MinecraftProfileTexture.Type.CAPE, null);
             return;
+        }
 
         ICape cape = user.capes.get(0);
-        if (cape == null)
+        if (cape == null) {
+            player.func_152121_a(MinecraftProfileTexture.Type.CAPE, null);
             return;
+        }
 
         cape.loadTexture(player);
     }
