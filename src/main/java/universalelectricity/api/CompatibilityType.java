@@ -13,7 +13,19 @@ import cpw.mods.fml.common.Loader;
 public enum CompatibilityType
 {
 	REDSTONE_FLUX("universalelectricity", "RedstoneFlux", "Redstone Flux", "RF", 2.5),
-	INDUSTRIALCRAFT("IC2", "IndustrialCraft", "Electrical Unit", "EU", 10);
+	INDUSTRIALCRAFT("IC2", "IndustrialCraft", "Electrical Unit", "EU", 10),
+	GREGTECH("gregtech", "GregTech", "Electrical Unit", "EU", 10),
+	HMB("hbm", "HBM", "HE", "HE", 10),
+	RAILCRAFT("railcraft", "Railcraft", "Charge", "C", 10),
+	MAGNETICRAFT("Magneticraft", "Magneticraft", "Watts", "W", 0.25),
+	APPENG("appliedenergistics2", "Applied Energistics 2", "Applied Energy", "AE", 5),
+	BLUETRICITY("universalelectricity", "Bluetricity", "Bluetricity", "BT", 17.5),
+	FACTORIZATION("factorization", "Factorization", "Charge", "C", 0.4375),
+	ULTRATECH("UltraTech", "Ultratech", "Quantum Power", "QP", 50),
+	ELN("Eln", "Electrical Age", "Watts", "W", 10.0/3.0),
+	HEXCRAFT("hexcraft", "HEXCraft", "HEX", "HEX", 0.78125),
+	GALACTICRAFT("galacticraftcore", "Galacticraft", "Galacticraft Joule", "gJ", 1.525);
+
 
 	public final String modID;
 	public final String moduleName;
