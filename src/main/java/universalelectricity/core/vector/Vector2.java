@@ -1,8 +1,9 @@
 package universalelectricity.core.vector;
 
 import net.minecraft.util.MathHelper;
+import universalelectricity.api.vector.IVector2;
 
-public class Vector2 implements Cloneable {
+public class Vector2 implements Cloneable, IVector2 {
 
    public double x;
    public double y;
@@ -97,5 +98,15 @@ public class Vector2 implements Cloneable {
 
    public String toString() {
       return "Vector2 [" + this.x + "," + this.y + "]";
+   }
+
+   @Override
+   public double x() {
+      return this.x;
+   }
+
+   @Override
+   public double y() {
+      return this.y;
    }
 }
