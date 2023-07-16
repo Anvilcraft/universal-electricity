@@ -43,4 +43,8 @@ public class UniversalElectricity {
       proxy.init();
    }
 
+   public static boolean isIC2CompatActive() {
+      return ic2Compat && Loader.isModLoaded("IC2");
+   }
+
 }

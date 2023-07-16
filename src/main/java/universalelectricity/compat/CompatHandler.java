@@ -4,7 +4,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Loader;
 import net.minecraft.tileentity.TileEntity;
 import universalelectricity.api.CompatibilityModule;
 import universalelectricity.compat.ic2.IC2CompatModule;
@@ -17,7 +16,7 @@ public class CompatHandler {
 
     public static void initCompatHandlers() {
         FMLCommonHandler.instance().bus().register(new CompatTickHandler());
-        if (Loader.isModLoaded("IC2") && UniversalElectricity.ic2Compat) {
+        if (UniversalElectricity.isIC2CompatActive()) {
             CompatibilityModule.register(new IC2CompatModule());
         }
     }
