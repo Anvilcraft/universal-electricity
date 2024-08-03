@@ -37,16 +37,13 @@ minecraft {
 
 repositories {
     maven {
-        name = "ic2"
-        url = "https://maven.ic2.player.to/"
-        metadataSources {
-            artifact()
-        }                                                                                                                                       
+        url = "https://s3.tilera.xyz/cdn/minecraft/libs/"
+        metadataSources { artifact() }
     }
 }
 
 dependencies {
-    implementation 'net.industrial-craft:industrialcraft-2:2.2.660-experimental:dev'
+    implementation "net.industrial-craft:industrialcraft-2:2.2.827-experimental:dev"
 }
 
 processResources {
